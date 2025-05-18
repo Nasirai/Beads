@@ -7,10 +7,13 @@
 		<style>
 html, body, #canvas {
 	margin: 0;
-	padding: 0;
-	border: 0;
-	height: 100%;
+    padding: 0;
+    border: 0;
+    width: 100%;
+    height: 100%;
     background-color: #202020;
+    overflow: hidden;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,8 +28,9 @@ body {
 
 #canvas {
 	display: block;
-	width: 800px !important;  /* your fixed game width */
-    height: 600px !important; /* your fixed game height */
+	width: 800px !important;
+    height: 600px !important;
+    image-rendering: pixelated;
 }
 
 #canvas:focus {
@@ -118,7 +122,7 @@ body {
 
 		<script src="index.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":715232,"index.wasm":52126319},"focusCanvas":true,"gdextensionLibs":[]};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":715184,"index.wasm":52126319},"focusCanvas":true,"gdextensionLibs":[]};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
